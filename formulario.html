@@ -9,8 +9,9 @@
 <body>
     <h4>Inicio de sesión</h4>
     <form>
+        <!--*READONLY: Propiedad que sirve para especificar información para el usuario-->
         <label for="nombre_usuario">Nombre de usuario: </label>
-        <input type="text" name="nombre_usuario" autocomplete="off">
+        <input type="text" name="nombre_usuario" autocomplete="off" value="Hola" readonly>
         <br>
         <label for="contraseña">Contraseña: </label>
         <input type="password" name="contraseña" autocomplete="off">
@@ -18,8 +19,9 @@
 
     <br>
 
+    <!--*DISABLED: Propiedad que sirve para evitar que el usuario haga cambios en campos en los que no tiene acceso (Campos cuya información cambia para/con la interacción del usuario)-->
     <form>
-        <input type="text" name="nombre_usuario" placeholder="Nombre de usuario" autocomplete="off">
+        <input type="text" name="nombre_usuario" placeholder="Nombre de usuario" autocomplete="off" value="Hola" disabled>
         <br>
         <input type="password" name="contraseña" placeholder="Contraseña" autocomplete="off">
     </form>
@@ -28,8 +30,9 @@
 
     <h4>Otros input</h4>
     <form>
+        <!--*REQUIRED: Propiedad que sirve para especificar que el campo es obligatorio-->
         <label for="">Fecha de nacimiento</label>
-        <input type="date" name="fecha_nacimiento">
+        <input type="date" name="fecha_nacimiento" required>
 
         <br>
 
@@ -45,6 +48,46 @@
 
         <label for="foto">Foto de perfil</label>
         <input type="file" name="foto" accept=".jpg, .png">
+
+        <br>
+
+        <input type="checkbox" name="check">
+        <label for="check">Aceptar términos y condiciones</label>
+
+        <br>
+
+        <input type="radio" name="radio" value="1">
+        <label for="radio">Opción 1</label>
+        <input type="radio" name="radio" value="2">
+        <label for="radio">Opción 2</label>
+        <input type="radio" name="radio" value="3">
+        <label for="radio">Opción 3</label>
+
+        <br>
+
+        <label for="categoria">Categoría</label>
+        <select name="categoria">
+            <option value="1">Categoría 1</option>
+            <option value="2">Categoría 2</option>
+            <option value="3">Categoría 3</option>
+        </select>
+
+        <br>
+
+        <label for="descripcion">Descripción</label>
+        <br>
+        <textarea name="descripcion"cols="30" rows="10">Hola mundo
+            Hola otra vez
+        </textarea>
+
+        <br>
+
+        <!--Botones que sirven para enviar información capturada en formulario-->
+        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
+
+        <!--Botón normal-->
+        <button type="button">Botón</button>
     </form>
 </body>
 </html>
