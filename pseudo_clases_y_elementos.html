@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*PSEUDOCLASES*/
+        button:hover {
+            background-color: darkred;
+            color: white;
+        }
+
+        input[type="checkbox"]:checked {
+            box-shadow: green 4px 4px 2px;
+        }
+
+        input[type="text"]:focus {
+            border-width: 5px;
+        }
+
+        /*PSEUDOELEMENTOS*/
+        p::first-letter {
+            font-size: 24px;
+        }
+
+        p::first-line {
+            font-style: italic;
+        }
+
+        p::selection {
+            background-color: yellow;
+        }
+
+        p.cita::before {
+            content: "\"";
+            /*border: 1px solid red;*/
+        }
+
+        p.cita::after {
+            content: "\"";
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Nombre">
+        <br>
+        <input type="checkbox">
+        <label>Check aquí</label>
+        <br>
+        <button>Enviar</button>
+    </form>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum maiores nobis iure maxime, fugit nihil deserunt earum quis excepturi! Aliquid, rerum ducimus! Accusamus, nisi iste voluptatibus ab dolore quia expedita?</p>
+
+    <p class="cita">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum maiores nobis iure maxime, fugit nihil deserunt earum quis excepturi! Aliquid, rerum ducimus! Accusamus, nisi iste voluptatibus ab dolore quia expedita?</p>
+</body>
+</html>

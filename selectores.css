@@ -33,3 +33,18 @@ div[class|="prueba"] {
 div[class$="prueba"] {
     line-height: 30px;
 }
+
+/*SELECTOR ~ : El valor del atributo (en este caso la clase) debe contener la palabra especificada siempre y cuando exista nada o un espacio antes y después de esta*/
+div[class~="prueba"] {
+    letter-spacing: 5px;
+}
+
+/*SELECTOR ^ : El valor del atributo (en este caso la clase) debe empezar con la palabra especificada, independientemente de los demás valores que pueda contener*/
+div[class^="prueba-"] {
+    border: solid 1px orange;
+}
+
+/*SELECTOR * : El valor del atributo (en este caso la clase) debe contener los caracteres especificados, independientemente de los demás valores que pueda contener*/
+div[class*="prueba"] {
+    text-decoration: underline;
+}
