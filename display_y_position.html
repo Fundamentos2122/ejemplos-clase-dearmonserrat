@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid black;
+        }
+
+        div, p {
+            /* display: inline; */
+        }
+
+        img {
+            display: block;
+            /*LOC: Utilidad en banners, menús, etc*/
+            position: sticky;
+            top: 0;
+        }
+
+        a {
+            display: inline-block;
+            /* padding: 20px; */
+        }
+
+        .p-relative {
+            position: relative;
+            height: 200px;
+            background-color: aquamarine;
+        }
+
+        .p-absolute {
+            display: block;
+            border-color: red;
+            position: absolute;
+            top: 0;
+            margin: 0;
+        }
+
+        .p-fixed {
+            width: 200px;
+            position: fixed;
+            background-color: beige;
+            right: 0;
+            top: 400px;
+            z-index: 100; /*Sobrepone el elemento sobre otros (nota: suele darse un valor grande)*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam esse unde atque blanditiis est sed, illum saepe quia porro necessitatibus possimus tempore vitae voluptate provident beatae deleniti ipsum voluptatum facere.
+    </div>
+
+    <div class="p-fixed">
+        Elemento fijo
+    </div>
+
+    <p>Hola mundo</p>
+
+    <a href="">Link</a>
+    <img src="https://picsum.photos/200/300" alt="">
+
+    <br><br><br><br><br>
+
+    <div  class="p-relative">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consequuntur veritatis impedit nulla quam laborum sint corporis eum ab reprehenderit? Nulla doloribus officiis voluptates, sunt neque exercitationem dolorem ea dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam necessitatibus nulla incidunt consequuntur voluptatibus sunt vero, accusamus beatae facilis officia impedit corporis maxime? Reprehenderit aperiam sint consequuntur, deleniti architecto officiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit minima, corrupti minus eveniet culpa adipisci laboriosam esse assumenda! Adipisci iste vitae labore expedita architecto porro totam voluptatibus harum aut deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque laudantium aliquid praesentium placeat doloribus, sapiente adipisci deserunt dicta saepe deleniti quidem, libero repellendus, nam debitis molestiae nesciunt fuga accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempora laborum, quis quia saepe earum fuga odit vero, provident, consequatur nostrum! Numquam repellendus optio laboriosam ipsum, assumenda aspernatur eos possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe adipisci fugiat repudiandae porro rem labore corporis perferendis recusandae architecto earum suscipit dicta tempore impedit provident, dignissimos veritatis id explicabo laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque totam recusandae autem ipsum expedita dolor harum esse tenetur laborum error culpa quod explicabo ducimus vitae rerum, inventore, dolorem magnam unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quos incidunt facere, dolore eveniet, adipisci facilis odit maiores ipsum placeat tenetur, quas voluptatum molestiae aliquid sed provident? Dolorum, eaque modi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem deserunt voluptates nesciunt hic. Corporis, fuga at harum ex quasi velit minus veritatis, nam ea culpa recusandae. Quibusdam cum officiis dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia esse, corporis, iusto ea sunt qui nam, tenetur dignissimos repellat nesciunt? Nam, culpa perferendis obcaecati earum quia dolorum ad temporibus.</p>
+
+        <a href="" class="p-absolute">Hola mundo</a>
+    </div>
+
+</body>
+</html>
