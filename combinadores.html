@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Combinador Descendente: Aplicará a todos los elementos debajo del div (sin importar el nivel) [p1, p2, p3]*/
+        div p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /*Combinador Hijo: Aplicará a los elementos en el primer nivel inmediato [p1, p2]*/
+        .d1 > p {
+            text-align: justify;
+        }
+
+        /*Combinador Adyacente: Aplicará al primer elemento después del primer div [p4]*/
+        div + p {
+            background-color: crimson;
+        }
+
+        /*Combinador Hermano: Aplicará a todos los elementos después del div, a diferencia del adyacente que sólo aplica al primero [*/
+        div ~ p {
+            border: 1px solid aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsum, veritatis consectetur laborum sunt id repellendus neque libero, aspernatur maxime laboriosam facilis harum praesentium a, quaerat maiores eligendi odit voluptas.</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident necessitatibus, rerum earum cupiditate quas eveniet debitis fugit fuga nobis ab eaque aliquid quam enim at. Voluptas error minima fuga suscipit.</p>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum itaque ipsa, officiis temporibus inventore sed dolores tenetur nulla debitis veniam odio culpa harum eum assumenda nobis enim labore laudantium excepturi.</p>
+        </div>
+    </div>
+    <!-- <a href="">Hola mundo</a> -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, voluptatibus sit commodi aliquam sequi fuga! Modi minima, excepturi molestias alias nesciunt animi non, facere possimus, vitae numquam laboriosam accusantium fugiat?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus, maxime fugit sit quas aut cumque ratione. Asperiores omnis eligendi unde suscipit in provident enim, quasi doloribus corrupti voluptates temporibus.</p>
+</body>
+</html>
